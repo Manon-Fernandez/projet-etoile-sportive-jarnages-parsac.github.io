@@ -1,4 +1,15 @@
+/**Général**/
+@media screen and (min-width: 768px) {
+    header, main{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
 /**Début header**/
+header {
+    background: linear-gradient(#efe62c,#FFFFFF) ;
+}
 .logo {
     width: 8em;
     height: 8em;
@@ -6,4 +17,14 @@
 
 .nav-link {
     text-transform: uppercase;
+}
+
+/**Début body**/
+.picture-team-F{
+    display: flex;
+    justify-content: center;
+}
+.picture {
+    height: 30em;
+    width: 30em;
 }
