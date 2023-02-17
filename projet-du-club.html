@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--Début head-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Etoile Sportive Jarnages Parsac</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </head>
+
+<!--Début body-->
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/Logo-ESJP.png" alt="Logo Etoile Sportive Jarnages Parsac"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="le-club.html">Le club</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="projet-du-club.html">Projet du club</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <main>
+            <section>
+                    <h1>Notre tournoi national</h1>
+                    <div>
+                        <p>L'Etoile Sportive Jarnages Parsac organise un tournoi national féminin à 8 qui se déroulera du 6 au 8 Mai 2023 au stade Octave Dayen de Parsac. Le samedi 6 mai sera consacré à l'accueil des équipes et le début des phases de poules.
+                            Le 7 mai se déroulera la suite des rencontres en phase de poules ainsi que les huitièmes et quarts de finale. Le lundi 8 auront lieu les demi-finales et la finale suivi d'un pot de l'amitié.
+                            Les inscriptions seront ouvertes jusqu'au 15 avril 2023, le tarif par équipe est de 150€ incluant le logement et les repas.
+                        </p>
+                    </div>
+                    <div class="container stadium">
+                        <img src="Images/Stade-Parsac.jpg" class="img-fluid img-thumbnail stadium-picture" alt="Photo stade de Parsac">
+                    </div>
+            </section>
+            <section>
+              <h2>Formulaire d'inscription</h2>
+              <div class="container-fluid inscription">
+                <form>
+                  <fieldset>
+                    <legend>Informations club</legend>
+                    <div class="mb-3">
+                      <label for="club-name" class="form-label">Nom</label>
+                      <input type="text" class="form-control" id="club-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="team-number" class="form-label">Nombre d'équipes inscrites</label>
+                      <input type="number" class="form-control" id="team-number" aria-describedby="team-info">
+                      <div id="team-info" class="form-text">Une équipe comprend 8 joueuses et maximum 3 remplaçantes.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="club-adress" class="form-label">Adresse</label>
+                      <input type="text" class="form-control" id="club-adress">
+                    </div>
+                    <div class="mb-3">
+                      <label for="club-cp" class="form-label">Code postal</label>
+                      <input type="number" class="form-control" id="club-cp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="club-town" class="form-label">Ville</label>
+                      <input type="text" class="form-control" id="club-town">
+                    </div>
+                    <div class="mb-3">
+                      <label for="club-phone" class="form-label">Téléphone</label>
+                      <input type="tel" class="form-control" id="club-phone">
+                    </div>
+                    <div class="mb-3">
+                      <label for="club-email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="club-email">
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Coordonées du responsable</legend>
+                    <div class="mb-3">
+                      <input type="radio" name="civilité" id="Mr" value="Mr">
+                      <label for="Mr" class="inline-label">Monsieur</label>
+                      <input type="radio" name="civilité" id="Mme" value="Mme">
+                      <label for="Mme" class="inline-label">Madame</label>
+                    </div>
+                    <div class="mb-3">
+                      <label for="coach-name" class="form-label">Nom</label>
+                      <input type="text" class="form-control" id="coach-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="coach-firstname" class="form-label">Prénom</label>
+                      <input type="text" class="form-control" id="coach-firstname">
+                    </div>
+                    <div class="mb-3">
+                      <label for="coach-phone" class="form-label">Téléphone</label>
+                      <input type="tel" class="form-control" id="coach-phone">
+                    </div>
+                  </fieldset>
+                  <div class="form-button">
+                    <button type="submit" class="btn btn-success">Envoyer</button>
+                  </div>
+                </form>
+              </div>
+            </section>
+        </main>
+
+        <footer class="bg-dark text-dark pt-5 pb-4">
+            <div class="container  text-center text-md-left">
+              <div class="row text-center text-md-left">
+                <div class="col-sm-3 col-md-2 mx-auto mt-3">
+                  <p>
+                    <a href="index.html" class="text-white" style="text-decoration: none;">Accueil</a>
+                  </p>
+                  <p>
+                    <a href="le-club.html" class="text-white" style="text-decoration: none;">Le club</a>
+                  </p>
+                  <p>
+                    <a href="projet-du-club.html" class="text-white" style="text-decoration: none;">Projet du club</a>
+                  </p>
+                  <p>
+                    <a href="contact.html" class="text-white" style="text-decoration: none;">Contact</a>
+                  </p>
+                </div>
+                <div class="col-sm-2 col-md-2 mx-auto mt-3 align-items-center justify-content-center">
+                  <div class="text-center text-md-right">
+                    <ul class="list-unstyled">
+                      <li class="list-item">
+                        <a href="https://www.facebook.com/ETSJarnagesParsac" class="btn-floating btn-sm text-white" style="font-size:1.5em;"><i class="bi bi-facebook"></i></a>
+                      </li>
+                      <li class="list-item">
+                        <a href="https://app.grinta.eu/et-s-jarnages-parsac?fbclid=IwAR0_oStw2vhbkCbM00yONCSfw13fLUZdBIOquSNGMh6eaRsDC_t9yk8-vq4" class="btn-floating btn-sm text-white" style="font-size:1.5em;"><i class="bi bi-bag-fill"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-md-7 col-lg-8 text-white">
+                    <p>Tous droits réservés</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+      </body>
+  </html>

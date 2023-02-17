@@ -6,7 +6,7 @@
     }
 }
 
-/**Style index**/
+/**Index**/
 /**Début header**/
 header {
     background: linear-gradient(#efe62c,#FFFFFF) ;
@@ -31,7 +31,7 @@ header {
 }
 
 
-/**Style le club**/
+/**Le club**/
 .profile {
     display: flex;
     align-items: center;
@@ -59,6 +59,39 @@ header {
     font-size: large;
     font-weight: bold;
     margin-top: 1em;
+}
+
+
+/**Projet du club**/  
+.stadium {
+    display: flex;
+    justify-content: center;
+}
+
+.stadium-picture {
+    width: 30em;
+    height: 30em;
+}
+
+.inscription {
+    max-width: 50%;
+}
+
+fieldset {
+    border: 0.5em solid lightgray;
+    background-color: rgba(225, 233, 255, 0.25);
+}
+
+legend {
+    font-style: italic;
+    font-size: 1.1em;
+    padding: 1em;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
 }
 
 
@@ -92,4 +125,5 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 2em;
+    pointer-events: none;
 }
