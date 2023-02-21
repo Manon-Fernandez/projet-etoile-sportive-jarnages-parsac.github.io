@@ -55,58 +55,82 @@
             <section>
               <h2>Formulaire d'inscription</h2>
               <div class="container-fluid inscription">
-                <form>
+                <form class="needs-validation">
                   <fieldset>
                     <legend>Informations club</legend>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <label for="club-name" class="form-label">Nom</label>
-                      <input type="text" class="form-control" id="club-name">
+                      <input type="text" class="form-control" id="club-name" required>
+                      <div class="invalid-feedback">
+                        Entrer le nom du club.
+                      </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <label for="team-number" class="form-label">Nombre d'équipes inscrites</label>
-                      <input type="number" class="form-control" id="team-number" aria-describedby="team-info">
+                      <input type="number" class="form-control" id="team-number" aria-describedby="team-info" required>
+                      <div class="invalid-feedback">
+                        Saisir le nombre d'équipes inscrites.
+                      </div>
                       <div id="team-info" class="form-text">Une équipe comprend 8 joueuses et maximum 3 remplaçantes.</div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <label for="club-adress" class="form-label">Adresse</label>
-                      <input type="text" class="form-control" id="club-adress">
+                      <input type="text" class="form-control" id="club-adress" required>
+                      <div class="invalid-feedback">
+                        Entrer l'adresse du club.
+                      </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <label for="club-cp" class="form-label">Code postal</label>
-                      <input type="number" class="form-control" id="club-cp">
+                      <input type="number" class="form-control" id="club-cp" required>
+                      <div class="invalid-feedback">
+                        Entrer le code postal du club.
+                      </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <label for="club-town" class="form-label">Ville</label>
-                      <input type="text" class="form-control" id="club-town">
+                      <input type="text" class="form-control" id="club-town" required>
+                      <div class="invalid-feedback">
+                        Entrer la ville du club.
+                      </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group">
                       <label for="club-phone" class="form-label">Téléphone</label>
                       <input type="tel" class="form-control" id="club-phone">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group">
                       <label for="club-email" class="form-label">Email</label>
                       <input type="email" class="form-control" id="club-email">
                     </div>
                   </fieldset>
                   <fieldset>
                     <legend>Coordonées du responsable</legend>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <input type="radio" name="civilité" id="Mr" value="Mr">
                       <label for="Mr" class="inline-label">Monsieur</label>
                       <input type="radio" name="civilité" id="Mme" value="Mme">
                       <label for="Mme" class="inline-label">Madame</label>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <label for="coach-name" class="form-label">Nom</label>
-                      <input type="text" class="form-control" id="coach-name">
+                      <input type="text" class="form-control" id="coach-name" required>
+                      <div class="invalid-feedback">
+                        Entrer le nom du responsable.
+                      </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <label for="coach-firstname" class="form-label">Prénom</label>
-                      <input type="text" class="form-control" id="coach-firstname">
+                      <input type="text" class="form-control" id="coach-firstname" required>
+                      <div class="invalid-feedback">
+                        Entrer le prénom du responsable.
+                      </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group was-validated">
                       <label for="coach-phone" class="form-label">Téléphone</label>
-                      <input type="tel" class="form-control" id="coach-phone">
+                      <input type="tel" class="form-control" id="coach-phone" required>
+                      <div class="invalid-feedback">
+                        Entrer le numéro de téléphone du responsable.
+                      </div>
                     </div>
                   </fieldset>
                   <div class="form-button">

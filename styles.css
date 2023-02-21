@@ -62,7 +62,13 @@ header {
 }
 
 
-/**Projet du club**/  
+/**Projet du club**/
+@media screen and (min-width: 992px) {
+    .inscription{
+        max-width: 50%;
+    }
+}  
+
 .stadium {
     display: flex;
     justify-content: center;
@@ -71,10 +77,6 @@ header {
 .stadium-picture {
     width: 30em;
     height: 30em;
-}
-
-.inscription {
-    max-width: 50%;
 }
 
 fieldset {
